@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+  background-color:#615D59;
+  color: #FFFFFF;
+  margin: auto;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #FFFFFF, rgba(0, 0, 0, 0));
+}
+
+h1 {
+  color: #DAD9D6;
+  font-family: 'Courier New', Courier, monospace;
+}
