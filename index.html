@@ -8,47 +8,59 @@
   </head>
 
   <body>
-    <div>
-        <h1>Joseff Costa</h1>
-        <img src="imgs/ftsOriginais/IMG_20210711_165839370.jpg" alt="Foto de Joseff Costa">
-        <p>Estudante de Ciências da Computação - <abbr title="Universidade Federal de Campina Grande">UFCG</abbr></p>
-      <hr>
-    </div>
+    <header>
+      <h1>Joseff Costa</h1>
+      <span class="botoesMenu">
+        <span>Início</span>
+        <span>Quem sou</span>
+        <span>Projetos</span>
+        <span>Redes Sociais</span>
+        <span>Outros Contatos</span>
+      </span>
+    </header>
 
-    <div>
-        <h1>Quem é Joseff Costa?</h1>
-        <p>Me chamo Rielisson Joseff de Sousa Costa, mas prefiro <Strong>Joseff Costa</Strong>, pela elegancia.</p>
-        <p>Sou um grande entusiasta na área de computação, principalmente quando se trata de <abbr title="Inteligência Artificial">IA</abbr>. Fui uma criança apaixonada por jogos e pelas possibilidades de novos universos que aquilo poderia me trazer. Fui também um jovem criativo, sempre buscava caminhos que me permitiam expressar minhas idéias e minha criatividade. Hoje junto todo meu passado com uma ambição de crescimento e inovação nessa área que tanto cresce e se diversifica.</p>
-      <hr>
-    </div>
+    <section class="inicio">
+      <h1>Joseff Costa <p>Estudante de Ciências da Computação - <abbr title="Universidade Federal de Campina Grande">UFCG</abbr></p></h1>
+      <img id="joseffIMG" src="imgs/ftsOriginais/IMG_20210711_165839370.jpg" alt="">
+    </section>
 
-    <div>
-        <h1>Pequenos Projetos <a href="alterPages/projetosMaiores.html">Projetos maiores &gt;</a></h1>
-        <img src="imgs/criptografiaLow.png" alt="Icone de Cadeado representando Criptografia de dados">
-        <h2>Criptografia Homomorfica - RSA</h2>
-        <p>Algorítmo RSA feito em java. Método que utiliza aritmética modular</p>
+    <main>
+      <section class="quemSou">
+          <p>Me chamo Rielisson Joseff de Sousa Costa, mas prefiro <Strong>Joseff Costa</Strong>, pela elegancia.</p>
+          <p>Sou um grande entusiasta na área de computação, principalmente quando se trata de <abbr title="Inteligência Artificial">IA</abbr>. Fui uma criança apaixonada por jogos e pelas possibilidades de novos universos que aquilo poderia me trazer. Fui também um jovem criativo, sempre buscava caminhos que me permitiam expressar minhas idéias e minha criatividade. Hoje junto todo meu passado com uma ambição de crescimento e inovação nessa área que tanto cresce e se diversifica.</p>
+      </section>
 
-        <img src="imgs/TetrizLow.png" alt="Ilustração que referencia o classico jogo de blocos Tetriz">
-        <h2>Tetriz</h2>
-        <p>Classico jogo Tetriz feito em Python</p>
-      <hr>
-    </div>
+      <section class="projetos">
+          <h1>Pequenos Projetos</h1>
+          <span class="rsa">
+            <img src="imgs/criptografiaLow.png" alt="Icone de Cadeado representando Criptografia de dados">
+            <h2>Criptografia Homomorfica - RSA</h2>
+            <p>Algorítmo RSA feito em java. Método que utiliza aritmética modular</p>
+          </span>
+          <span class="tetriz">
+            <img src="imgs/TetrizLow.png" alt="Ilustração que referencia o classico jogo de blocos Tetriz">
+            <h2>Tetriz</h2>
+            <p>Classico jogo Tetriz feito em Python</p>
+          </span>
+      </section>
+    </main>
 
-    <div>
-        <h2>Redes Sociais</h2>
-        <a href="https://www.instagram.com/severus_joseff/" target="_blank" rel="external"><img src="imgs/InstagramLogoLow.png" alt="Logo do Instagram"></a>
-        <a href="https://www.instagram.com/severus_joseff/" target="_blank" rel="external">Severus_Joseff</a>
+    <footer>
+        <section class="redesSociais">
+          <h2>Redes Sociais</h2>
+          <a href="https://www.instagram.com/severus_joseff/" target="_blank" rel="external"><img src="imgs/InstagramLogoLow.png" alt="Logo do Instagram"></a>
+          <a href="https://www.instagram.com/severus_joseff/" target="_blank" rel="external">Severus_Joseff</a><br>
+          <a href="https://www.linkedin.com/in/rielisson-joseff-b9b087250/" target="_blank" rel="external"><img src="imgs/linkedinLogoLow.png" alt="Logo do Linkedin"></a>
+          <a href="https://www.linkedin.com/in/rielisson-joseff-b9b087250/">Rielisson Joseff</a><br>
+          <a href="https://github.com/CostaJoseff" target="_blank" rel="external"><img src="imgs/github_318-566791.png" alt="Logo do GitHub"></a>
+          <a href="https://github.com/CostaJoseff" target="_blank" rel="external">Costa Joseff</a><br>
+        </section>
 
-        <a href="https://www.linkedin.com/in/rielisson-joseff-b9b087250/" target="_blank" rel="external"><img src="imgs/linkedinLogoLow.png" alt="Logo do Linkedin"></a>
-        <a href="https://www.linkedin.com/in/rielisson-joseff-b9b087250/">Rielisson Joseff</a>
-
-        <a href="https://github.com/CostaJoseff" target="_blank" rel="external"><img src="imgs/github_318-566791.png" alt="Logo do GitHub"></a>
-        <a href="https://github.com/CostaJoseff" target="_blank" rel="external">Costa Joseff</a>
-
-        <h2>Outros Contatos</h2>
-        <p>Email: rielissonjoseff@gmail.com</p>
-        <p>Telefone: (83) 98806-0076</p>
-      <hr>
-    </div>
+        <section class="outrosContatos">
+          <h2>Outros Contatos</h2>
+          <p>Email: rielissonjoseff@gmail.com</p>
+          <p>Telefone: (83) 98806-0076</p>
+        </section>
+    </footer>
   </body>
 </html>
