@@ -27,7 +27,7 @@ header > * {
 }
 
 header > nav > a {
-  padding: 0.3em;
+  padding: 0.5em;
   text-decoration: none;
   color: white;
 }
@@ -49,7 +49,6 @@ header > h1 {
 .nomeFacul {
   margin-right: 13%;
   margin-left: 5%;
-  text-align: right;
 }
 
 .nomeFacul > * {
@@ -64,7 +63,7 @@ header > h1 {
 .quemSou {
   background-color: white;
   color: black;
-  padding: 4% 5%;
+  padding: 4% 8%;
 }
 
 .quemSou > * {
@@ -86,7 +85,7 @@ header > h1 {
 .listaProjetos {
   background-color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0 5%;
   padding-bottom: 1.5em;
 }
@@ -105,6 +104,11 @@ header > h1 {
 
 .projeto {
   width: 50%;
+}
+
+.projeto > img {
+  margin: auto;
+  display: block;
 }
 
 .projeto > p, h2 {
@@ -128,10 +132,7 @@ footer > *, * > * {
 
 .redesSociais {
   margin-right: 20%;
-}
-
-.redesSociais > a {
-  display: block;
+  display: inline;
 }
 
 .outrosContatos {
@@ -140,4 +141,12 @@ footer > *, * > * {
 
 .outrosContatos > h2 {
   text-align: left;
+}
+
+.redesSociais > div {
+  display: flex;
+}
+
+.redesSociais > div > img {
+  padding-right: 7%;
 }
