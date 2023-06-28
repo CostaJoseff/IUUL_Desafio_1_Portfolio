@@ -1,21 +1,74 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,100&display=swap');
 
 body {
   background-color: #1b1e23;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: auto;
+  max-width: 1440px;
+  min-width: 300px;
 }
 
 /*Cores e fontes*/
+header {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: small;
+}
+
+header > h1:hover, a:hover {
+  color: #f7f7f6;
+  transition-duration: 0.5s;
+}
+
+abbr:hover {
+  color: #d8c277;
+  transition-duration: 0.5s;
+}
+
 .textoDestaque {
   color: #d8c277;
   text-decoration: none;
+}
+
+.fontDestaque {
+  font-family: Raleway;
+  font-size: 100px;
+  font-weight: lighter;
 }
 
 .texto {
   color: #cdb88d;
 }
 
+.fontDestaqueMenor {
+  font-family: Raleway;
+  font-size: Thin;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.fontLeitura {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: xx-large;
+  word-spacing: 7px;
+}
+
+.fontLeituraMenor {
+  font-weight: normal;
+}
+
 .link {
   color: #f7f7f6;
+}
+
+.link:hover {
+  color: #cdb88d;
+  transition-duration: 0.5s;
+}
+
+.caixaSombreada {
+  box-shadow: rgba(0, 0, 0, 0.993) 0px 5px 15px;
 }
 
 .backClaro {
@@ -35,10 +88,19 @@ header {
   display: flex;
   align-items: center;
   margin-top: 1em;
+  cursor: pointer;
 }
 
 header > h1 {
   flex-grow: 1;
+}
+
+.vpTotal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .navEspaco {
@@ -81,13 +143,13 @@ header > h1 {
 
 .caixaCentrada {
   width: 30%;
-  height: 10em;
-  border-radius: 7px;
+  height: 12em;
+  border-radius: 3px;
   padding-left: 1em;
   padding-right: 1em;
 }
 
 .imgEmCaixa {
-  margin: auto;
+  margin: 1em auto;
   display: block;
 }
