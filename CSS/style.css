@@ -1,152 +1,93 @@
 @charset "UTF-8";
 
 body {
-  margin: 0 auto;
-  background-color: #09090c;
-  max-width: 1440px;
-  min-width: 300px;
+  background-color: #1b1e23;
 }
 
-/* -TAGS gerais- */
-abbr {
-  text-decoration-thickness: 2px;
+/*Cores e fontes*/
+.textoDestaque {
+  color: #d8c277;
+  text-decoration: none;
 }
 
-/* -Header e conteúdo do menu- */
-header {
-  display: flex;
-  background-color: #09090c;
-  align-items: center;
-  margin: auto 2em;
-  height: 4.5em;
-  color: white;
+.texto {
+  color: #cdb88d;
 }
 
-header > * {
+.link {
+  color: #f7f7f6;
+}
+
+.backClaro {
+  background-color: #f7f7f6;
+}
+
+.backEscuro {
+  background-color: #1b1e23;
+}
+
+/*Ajuste de página*/
+* {
   margin: 0;
 }
 
-header > nav > a {
-  padding: 0.5em;
-  text-decoration: none;
-  color: white;
+header {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
 }
 
 header > h1 {
   flex-grow: 1;
 }
 
-/* -Tela Inicial- */
-.telaInicial {
+.navEspaco {
+  margin: 0 0.5em;
+}
+
+.flexEspaco {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 7% 0;
-  font-size: x-large;
-  color: white;
+  justify-content: space-evenly;
 }
 
-.nomeFacul {
-  margin-right: 13%;
-  margin-left: 5%;
-}
-
-.nomeFacul > * {
-  margin: 0;
-}
-
-.foto {
-  margin-right: 5%;
-}
-
-/* -Quem sou- */
-.quemSou {
-  background-color: white;
-  color: #09090c;
-  padding: 4% 8%;
-}
-
-.quemSou > * {
-  margin: 0;
-  margin-bottom: 1%;
-}
-
-/* -Pequenos Projetos- */
-.tituloProjetos {
-  color: white;
-  text-align: center;
-  padding: 3% 0;
-}
-
-.tituloProjetos > * {
-  margin: 0;
-}
-
-.listaProjetos {
-  background-color: white;
+.flexEspaco02 {
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  padding: 0 5%;
-  padding-bottom: 1.5em;
 }
 
-.listaProjetos > * > *{
-  margin: 0;
+.responsivePadding {
+  padding: 0 1em;
 }
 
-.rsa {
-  margin-right: 3%;
+.topBotEspaco {
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
-.tetriz {
-  margin-left: 3%;
+.descricaoEspaco {
+  padding-left: 4em;
+  padding-right: 4em;
 }
 
-.projeto {
-  width: 50%;
+.pEspaco {
+  padding-bottom: 1em;
 }
 
-.projeto > img {
+.textoMeio {
+  text-align: center;
+}
+
+.caixaCentrada {
+  width: 30%;
+  height: 10em;
+  border-radius: 7px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.imgEmCaixa {
   margin: auto;
   display: block;
-}
-
-.projeto > p, h2 {
-  text-align: center;
-}
-
-/* -Footer- */
-footer {
-  background-color: #09090c;
-  color: white;
-  margin-right: 2em;
-  margin-left: 20%;
-  display: flex;
-  padding-top: 1em;
-}
-
-footer > *, * > * {
-  margin: 0;
-  padding-bottom: 0.3em;
-}
-
-.redesSociais {
-  margin-right: 20%;
-  display: inline;
-}
-
-.outrosContatos {
-  margin-left: 20%;
-}
-
-.outrosContatos > h2 {
-  text-align: left;
-}
-
-.redesSociais > div {
-  display: flex;
-}
-
-.redesSociais > div > img {
-  padding-right: 7%;
 }
