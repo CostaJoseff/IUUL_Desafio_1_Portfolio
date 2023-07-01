@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;1,100&display=swap');
+
+html {
+  background-color: #1b1e23;
+}
+
+.abbr-branco:hover {
+  color: #f7f7f6;
+  transition: 0.5s;
+}
+
+.abbr-amarelo:hover {
+  color: #d8c277;
+  transition: 0.5s;
+}
+
+.bg-escuro {
+  background-color: #1b1e23;
+}
+
+.bg-claro {
+  background-color: #f7f7f6;
+}
+
+.hdr-spn {
+  font-weight: 300;
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  color: #d8c277;
+  transition-duration: 0.5s;
+}
+
+.hdr-spn:hover {
+  color: #f7f7f6;
+  transition-duration: 0.5s;
+  font-size: 31px;
+}
+
+.nav-link {
+  --bs-nav-pills-link-active-color: #f7f7f6;
+  --bs-nav-link-hover-color: #f7f7f6;
+  --bs-nav-link-color: #d8c277;
+}
+
+.active {
+  cursor: default;
+  font-style: oblique;
+}
+
+.txt-fim {
+  text-align: end;
+}
+
+.txt-dstk {
+  color: #d8c277;
+  font-size: 100px;
+  font-weight: 300;
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.txt-dstk-m {
+  color: #d8c277;
+  font-size: 20px;
+}
+
+.txt-leitura {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.text-body-secondary {
+  --bs-secondary-color: #d8c277;
+}
+
+.icon-m {
+  font-size: 40px;
+}
+
+.sombra {
+  box-shadow: 0px 2px 4px -1px #00000033, 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+.sombra-interna {
+  box-shadow: inset 0px -30px 30px -30px #1b1e23, inset 0px 30px 30px -30px #1b1e23;
+}

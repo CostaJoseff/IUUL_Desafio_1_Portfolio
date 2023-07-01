@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+html {
+  min-width: 300px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.spc-entre {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tela-inteira {
+  height: 100vh;
+}
+
+.inside-box-p {
+  padding: 2% 2%;
+}
+
+.inside-box-g {
+  padding: 10%;
+}
+
+.margin-box-g {
+  margin: 10% 10%;
+}
+
+.txt-meio {
+  text-align: center;
+}
+
+.img-padd-bot {
+  padding-bottom: 3em;
+}
+
+.padd-top-bot {
+  padding: 3em 0;
+}
+
+

@@ -3,80 +3,102 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <title>Joseff Costa</title>
+    <link rel="stylesheet" href="CSS/indentacao.css">
+    <link rel="stylesheet" href="CSS/fonts-cores.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Início | Joseff Costa</title>
   </head>
+
   <body>
-    <header class="responsivePadding">
-      <h1 class="textoDestaque ">Joseff Costa</h1>
-      <nav>
-        <a class="textoDestaque navEspaco" href="">Início</a>
-        <a class="textoDestaque navEspaco" href="">Quem sou</a>
-        <a class="textoDestaque navEspaco" href="">Pequenos projetos</a>
-        <a class="textoDestaque navEspaco" href="alterPages/portifolio.html">Portifólio</a>
-        <a class="textoDestaque navEspaco" href="">Contatos</a>
-      </nav>
-    </header>
+    <div class="containermb-2 bg-escuro fixed-top">
+      <header class="sombra d-flex flex-wrap justify-content-center px-5">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+          <span class="hdr-spn">Joseff Costa</span>
+        </a>
 
-    <main >
-      <section class="flexEspaco responsivePadding">
-        <div class="vpTotal">
-          <h2 class="textoDestaque fontDestaque">Joseff Costa</h2>
-          <p class="texto fontDestaqueMenor">Estudante de Ciencias da Computação - <abbr title="Universidade Federal de Campina Grande">UFCG</abbr></p>
+        <div class="d-flex justify-content-center py-3 animacao">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Início</a></li>
+            <li class="nav-item"><a href="#quem-sou" class="nav-link">Quem sou</a></li>
+            <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+            <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+          </ul>
         </div>
-        <div >
-          <picture>
-            <img src="imgs/fotoExemploOriginalLOW.png" alt="Foto Exemplo">
-          </picture>
-        </div>
-      </section>
+      </header>
+    </div>
 
-      <section class="backClaro responsivePadding topBotEspaco descricaoEspaco fontLeitura">
-        <p class="pEspaco">Me chamo <em>Rielisson Joseff</em>, mas prefiro <em>Joseff Costa</em>, claramente mais elegante.</p>
-        <p class="fontLeituraMenor">Sou um grande entusiasta na área de computação, principalmente quando se trata de <abbr title="Inteligência Artificial">IA</abbr>. Fui uma criança apaixonada por jogos e pelas possibilidades dos novos universos que aquilo poderia me trazer. Fui também um jovem criativo, sempre buscava caminhos que me permitiam expressar minhas idéias e minha criatividade. Hoje junto todo meu passado com uma ambição de crescimento e inovação nessa área que tanto cresce e se diversifica.</p>
-      </section>
-
-      <div class="responsivePadding topBotEspaco">
-        <h1 class="textoDestaque textoMeio">Pequenos Projetos</h1>
+    <main class="container-flex bg-escuro spc-entre tela-inteira">
+      <div>
+        <p class="txt-dstk txt-fim">Joseff Costa</p>
+        <p class="txt-dstk-m txt-fim">Estudante de Ciencias da Computação - <abbr class="abbr-branco" title="Universidade Federal de Campina Grande">UFCG</abbr></p>
       </div>
-
-      <section class="backClaro responsivePadding flexEspaco topBotEspaco">
-        <div class="backEscuro caixaCentrada caixaSombreada">
-          <img class="imgEmCaixa" src="imgs/criptografiaLow.png" alt="criptografia">
-          <h2 class="textoDestaque textoMeio">Criptografia RSA</h2>
-          <p class="texto pEspaco textoMeio fontLeituraMenor">Algorítmo feito em java. Método que utiliza aritmética modular</p>
-        </div>
-        <div class="backEscuro caixaCentrada caixaSombreada">
-          <img class="imgEmCaixa" src="imgs/tetrizLogo.png" alt="tetriz">
-          <h2 class="textoDestaque textoMeio">Tetriz</h2>
-          <p class="texto pEspaco textoMeio fontLeituraMenor">Classico jogo desenvolvido em Python</p>
-        </div>
-      </section>
+      <div>
+        <picture>
+          <img src="imgs/fotoExemploOriginalLOW.png" alt="Foto Exemplo">
+        </picture>
+      </div>
     </main>
 
-    <footer class="responsivePadding flexEspaco02 topBotEspaco ">
-      <div >
-        <h2 class="textoDestaque">Redes Sociais</h2>
-        <div >
-          <a href="https://www.instagram.com/severus_joseff/" target="_blank" rel="external"><img src="imgs/instagram-16x16.png" alt="Instagram Logo"></a>
-          <a class="link" href="https://www.instagram.com/severus_joseff/" target="_blank" rel="external">Severus_Joseff</a><br>
-        </div>
-        <div >
-          <a href="https://www.linkedin.com/in/rielisson-joseff-b9b087250/" target="_blank" rel="external"><img src="imgs/linkedin-16x16.png" alt="Linkedin Logo"></a>
-          <a class="link" href="https://www.linkedin.com/in/rielisson-joseff-b9b087250/" target="_blank" rel="external">Rielisson Joseff</a><br>
-        </div>
-        <div >
-          <a href="https://github.com/CostaJoseff" target="_blank" rel="external"><img  src="imgs/gitHub-16x16.png" alt="GitHub Logo"></a>
-          <a class="link" href="https://github.com/CostaJoseff" target="_blank" rel="external">Costa Joseff</a>
-        </div>
-      </div>
+    <section id="quem-sou" class="sombra-interna box-border bg-claro inside-box-g txt-leitura">
+      <p>Me chamo <em>Rielisson Joseff</em>, mas prefiro <em>Joseff Costa</em>, claramente mais elegante.</p>
 
-      <div >
-        <h2 class="textoDestaque">Outros Contatos</h2>
-        <span class="texto">Email: </span>
-        <a class="link" href="">rielissonjoseff@gmail.com</a>
-        <p class="texto">Telefone: (83) 98806-0076</p>
+      <p class="fontLeituraMenor">Sou um entusiasta apaixonado pela área da computação, com um foco especial em <abbr class="abbr-amarelo" title="Inteligência Artificial">IA</abbr>. Desde criança, fui fascinado por jogos e pelas infinitas possibilidades que esses universos virtuais poderiam me oferecer. Sempre fui um jovem criativo, constantemente buscava maneiras de expressar minhas ideias e minha criatividade. Atualmente, reúno todo o meu passado e experiência com uma ambição incansável de crescimento e inovação nesse campo em constante expansão e diversificação.</p>
+    </section>
+
+    <section id="projetos" class="inside-box-g bg-escuro">
+      <h2 class="txt-meio txt-dstk">Projetos</h2>
+    </section>
+
+    <section class="sombra-interna">
+      <div class="container px-4 py-5" id="featured-3">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <img class="img-padd-bot" src="/imgs/ia-icon-m.png" alt="Icone IA">
+            <h3 class="fs-2 text-body-emphasis">IA Divergente</h3>
+            <p>A primeira <abbr class="abbr-amarelo" title="Inteligência Artificial">IA</abbr> divergente, capaz de tomar decisões independentes além da programação probabilística convencional. Essa <abbr class="abbr-amarelo" title="Inteligência Artificial">IA</abbr> inovadora aprende de forma excepcional e toma decisões concretas, abrindo novas possibilidades e avanços surpreendentes no campo da <abbr class="abbr-amarelo" title="Inteligência Artificial">IA</abbr>.</p>
+            <a href="#" class="icon-link">
+              Saiba mais
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <img class="img-padd-bot" src="imgs/pi-icon-m.png" alt="Icone PI">
+            <h3 class="fs-2 text-body-emphasis">Palindromo em &pi;</h3>
+            <p>O primeiro número primo palíndromo de 9 dígitos em Pi, um marco significativo na busca por padrões e propriedades fascinantes desse número irracional. Essa descoberta destaca a complexidade e beleza subjacentes a Pi, reafirmando seu poder de encantar estudiosos e curiosos.</p>
+            <a href="#" class="icon-link">
+              Saiba mais
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <img class="img-padd-bot" src="imgs/CriptoLogo-m.png" alt="Icone Criptografia">
+            <h3 class="fs-2 text-body-emphasis">RSA-JC11</h3>
+            <p>O algoritmo criptográfico homomórfico mais rápido e complexo já criado. Essa conquista representa um avanço significativo na segurança da informação. Esse algoritmo inovador combina eficiência e complexidade, abrindo caminho para aplicações avançadas e proteção de informações sensíveis.</p>
+            <a href="#" class="icon-link">
+              Saiba mais
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center bg-escuro padd-top-bot px-5">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">Joseff Costa - Portfolio</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="https://github.com/CostaJoseff" target="_blank" rel="external"><i class="bi bi-github icon-m"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/severus_joseff/" target="_blank" rel="external"><i class="bi bi-instagram icon-m"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/rielisson-joseff-b9b087250/" target="_blank" rel="external"><i class="bi bi-linkedin icon-m"></i></a></li>
+      </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
