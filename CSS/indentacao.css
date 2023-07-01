@@ -15,6 +15,10 @@ ul {
   justify-content: space-evenly;
 }
 
+.padd-lft-pp {
+  padding-left: 1em;
+}
+
 .tela-inteira {
   height: 100vh;
 }
@@ -47,4 +51,12 @@ ul {
 
 .padd-top-bot {
   padding: 3em 0;
+<<<<<<< HEAD
+}
+
+.itens-centro {
+  display: flex;
+  align-items: center;
+=======
+>>>>>>> 7f37780ff57bb59ce01a81e91c2a51999c4d5714
 }
