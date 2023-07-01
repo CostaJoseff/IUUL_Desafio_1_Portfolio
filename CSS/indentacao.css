@@ -24,7 +24,11 @@ ul {
 }
 
 .inside-box-p {
-  padding: 2% 2%;
+  padding: 2%;
+}
+
+.inside-box-m {
+  padding: 5%;
 }
 
 .inside-box-g {
@@ -51,12 +55,9 @@ ul {
 
 .padd-top-bot {
   padding: 3em 0;
-<<<<<<< HEAD
 }
 
 .itens-centro {
   display: flex;
   align-items: center;
-=======
->>>>>>> 7f37780ff57bb59ce01a81e91c2a51999c4d5714
 }
