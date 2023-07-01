@@ -35,6 +35,12 @@ ul {
   text-align: center;
 }
 
+.txt-centro {
+  text-align: center;
+  text-align: center;
+  align-items: center;
+}
+
 .img-padd-bot {
   padding-bottom: 3em;
 }
@@ -42,5 +48,3 @@ ul {
 .padd-top-bot {
   padding: 3em 0;
 }
-
-

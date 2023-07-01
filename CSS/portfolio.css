@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.txt-dstk {
+    font-size: 150px;
+}
+
+.bg-IA {
+    height: 90vh;
+    background-image: url("../imgs/IABackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-IA-2 {
+    background-image: url("../imgs/IABackground2.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.a-frente {
+    position: relative;
+    z-index: 10;
+}
+
+.hdr-spc {
+    height: 72px;
+}
