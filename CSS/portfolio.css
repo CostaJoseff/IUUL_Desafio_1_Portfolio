@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @charset "UTF-8";
 
 .txt-dstk {
@@ -30,37 +29,27 @@
 
 .hdr-spc {
     height: 72px;
-=======
-@charset "UTF-8";
-
-.txt-dstk {
-    font-size: 150px;
 }
 
-.bg-IA {
-    height: 90vh;
-    background-image: url("../imgs/IABackground.jpg");
+.bg-grafo {
+    background-image: url("../imgs/grafo.jpg");
     background-repeat: no-repeat;
-    background-position: center top;
     background-size: cover;
-    background-attachment: fixed;
+    background-position: left bottom;
 }
 
-.bg-IA-2 {
-    background-image: url("../imgs/IABackground2.jpg");
+.bg-python {
+    background-image: url("../imgs/python.jpg");
     background-repeat: no-repeat;
-    background-position: center top;
     background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+    background-position: center center;
 }
 
-.a-frente {
-    position: relative;
-    z-index: 10;
+.scale-anim {
+    transition: 0.3s;
 }
 
-.hdr-spc {
-    height: 72px;
->>>>>>> 7f37780ff57bb59ce01a81e91c2a51999c4d5714
+.scale-anim:hover {
+transform: scale(0.97);
+transition: 0.3s;
 }
