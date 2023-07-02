@@ -45,11 +45,23 @@
     background-position: center center;
 }
 
-.scale-anim {
+.bg-R {
+    background-image: url(../imgs/calculo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.scale-anim-2 {
     transition: 0.3s;
 }
 
-.scale-anim:hover {
-transform: scale(0.97);
-transition: 0.3s;
+.scale-anim-2:hover {
+    transform: scale(0.97);
+    transition: 0.3s;
+}
+
+.scale-anim-2:active {
+    transform: scale(0.87);
+    transition: 0.3s;
 }
