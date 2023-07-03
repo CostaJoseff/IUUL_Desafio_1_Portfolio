@@ -4,6 +4,14 @@
     font-size: 150px;
 }
 
+.txt-dstk-m {
+    text-align: center;
+}
+
+.n-decoracao {
+    text-decoration: none;
+}
+
 .bg-IA {
     height: 90vh;
     background-image: url("../imgs/IABackground.jpg");
@@ -20,11 +28,6 @@
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-}
-
-.a-frente {
-    position: relative;
-    z-index: 10;
 }
 
 .bg-grafo {
@@ -60,4 +63,73 @@
 .scale-anim-2:active {
     transform: scale(0.87);
     transition: 0.3s;
+}
+
+@media (max-width: 970px) {
+    .txt-dstk {
+      font-size: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hdr-pdd-x {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+    .hdr-pdd-y {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .hdr-mg-bot {
+        margin-bottom: 0;
+    }
+
+    .hdr-spn {
+        margin-top: 0.4em;
+    }
+
+    .hdr-spc {
+        height: 97px;
+    }
+}
+
+@media (max-width: 616px) {
+    .hdr-pdd-x {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width: 562px) {
+    .txt-dstk {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 551px) {
+    .hdr-pdd-x {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 455px) {
+    .hdr-pdd-x {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+@media (max-width: 438px) {
+    .txt-dstk {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 365px) {
+    .hdr-spc {
+        height: 92.5px;
+    }
 }
