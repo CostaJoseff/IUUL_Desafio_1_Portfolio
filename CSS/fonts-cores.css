@@ -74,7 +74,7 @@ html {
 .txt-leitura {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 25px;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 .text-body-secondary {
@@ -118,10 +118,11 @@ html {
 .inst-normal-icon {
   color: #cc2366;
 }
+/* MEDIA */
 
-@media (max-width: 1023px) {
+@media (max-width: 970px) {
   .txt-dstk {
-    font-size: 70px;
+    font-size: 80px;
   }
 
   .txt-dstk-p {
@@ -129,22 +130,28 @@ html {
   }
 }
 
-@media (max-width: 427px) {
-  .txt-leitura {
-    font-size: 20px;
-  }
-
+@media (max-width: 854px) {
   .txt-dstk {
-    font-size: 50px;
+    font-size: 60px;
   }
 
-  .txt-fim {
+  .txt-dstk-p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 562px) {
+  .txt-leitura {
+    font-size: 18px;
+  }
+
+  .txt-dstk, .txt-dstk-p {
     text-align: center;
   }
 }
 
-@media (max-width: 321px) {
-  .txt-leitura {
-    font-size: 17px;
+@media (max-width: 358px) {
+  .txt-dstk {
+    font-size: 50px;
   }
 }
