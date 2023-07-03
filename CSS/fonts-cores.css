@@ -118,3 +118,33 @@ html {
 .inst-normal-icon {
   color: #cc2366;
 }
+
+@media (max-width: 1023px) {
+  .txt-dstk {
+    font-size: 70px;
+  }
+
+  .txt-dstk-p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 427px) {
+  .txt-leitura {
+    font-size: 20px;
+  }
+
+  .txt-dstk {
+    font-size: 50px;
+  }
+
+  .txt-fim {
+    text-align: center;
+  }
+}
+
+@media (max-width: 321px) {
+  .txt-leitura {
+    font-size: 17px;
+  }
+}

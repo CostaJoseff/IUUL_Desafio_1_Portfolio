@@ -1,67 +1,127 @@
-@charset "UTF-8";
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
-
-html {
-  min-width: 300px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none!important;
-}
-
-.spc-entre {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.padd-lft-pp {
-  padding-left: 1em;
+.hdr-pdd-x {
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
 
 .tela-inteira {
   height: 100vh;
 }
 
-.inside-box-p {
-  padding: 2%;
+.disp-flex {
+  display: flex;
 }
 
-.inside-box-m {
-  padding: 5%;
+.hdr-pdd-y {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.inside-box-g {
-  padding: 10%;
-}
-
-.margin-box-g {
-  margin: 10% 10%;
+.alinha-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .txt-meio {
   text-align: center;
 }
 
-.txt-centro {
-  text-align: center;
-  text-align: center;
-  align-items: center;
+.inside-box-g {
+  padding: 10%;
 }
 
-.img-padd-bot {
+.inside-box-m {
+  padding: 5%;
+}
+
+.padd-left-p {
+  padding-left: 1em;
+}
+
+.padd-bot-p {
+  padding-bottom: 1em;
+}
+
+.padd-bot-m {
   padding-bottom: 3em;
-}
-
-.padd-top-bot {
-  padding: 3em 0;
 }
 
 .itens-centro {
   display: flex;
   align-items: center;
+}
+
+.hdr-spc {
+  height: 72px;
+}
+
+.hdr-mg-bot {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 769px) {
+  .row > * {
+    --bs-gutter-y: 5rem;
+  }
+
+  .alinha-main{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+@media (max-width: 426px) {
+  .tela-inteira {
+    height: auto;
+  }
+
+  .hdr-spn {
+    padding-top: 0.4em;
+  }
+
+  .alinha-main {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding-top: 1em;
+  }
+
+  .disp-flex {
+    display: block;
+  }
+
+  .hdr-spc {
+    height: 97px;
+  }
+
+  .hdr-mg-bot {
+    margin-bottom: 0px;
+  }
+
+  .hdr-pdd-x {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .hdr-pdd-y {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .nav-link {
+    --bs-nav-link-padding-x: ;
+  }
+}
+
+@media (max-width: 321px) {
+  .hdr-spc {
+    height: 92.19px;
+  }
+
+  .nav-link {
+    font-size: 2px;
+  }
+
+  body {
+    --bs-body-font-size: 0.8rem;
+  }
 }

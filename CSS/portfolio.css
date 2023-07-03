@@ -27,10 +27,6 @@
     z-index: 10;
 }
 
-.hdr-spc {
-    height: 72px;
-}
-
 .bg-grafo {
     background-image: url("../imgs/grafo.jpg");
     background-repeat: no-repeat;
