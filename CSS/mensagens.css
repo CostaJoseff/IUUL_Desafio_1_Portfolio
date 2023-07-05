@@ -1,0 +1,17 @@
+html {
+  background-color: #1b1e23;
+}
+
+.mrg-td-p {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.scale-anim-icon:active {
+  transform: scale(0.57);
+}
+
+.del-anim {
+  height: 0;
+  transition: 1s;
+}
