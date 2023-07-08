@@ -46,6 +46,14 @@
   padding: 2%;
 }
 
+.inside-box-button-p {
+  margin: 1%;
+}
+
+.padd-top-p {
+  padding-top: 2%;
+}
+
 .padd-left-p {
   padding-left: 1em;
 }
@@ -56,6 +64,10 @@
 
 .padd-right-m-2 {
   padding-right: 10em;
+}
+
+.padd-left-pp {
+  padding-left: 0.3em;
 }
 
 .padd-rt-m {

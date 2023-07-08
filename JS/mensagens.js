@@ -18,7 +18,7 @@ function criarIconEventList(iconLixo, ID) {
   }
 }
 
-function prepararElementos(i) {
+function prepararElementos(i, mensagens) {
   let divCard = document.createElement("div");
   divCard.classList = "card mrg-td-p sombra bg-claro"
 
@@ -76,9 +76,14 @@ function deletarTudo() {
   divMsgArea.innerHTML = '';
 }
 
-let mensagens = JSON.parse(localStorage.getItem("mensagens"));
-let msgArea = document.getElementById("msg-area");
-for (let i = 0; i < mensagens.length; i++) {
-  const elementos = prepararElementos(i);  
-  msgArea = appendElements(msgArea, elementos);
+function atualizarMensagens() {
+  let mensagens = JSON.parse(localStorage.getItem("mensagens"));
+  let msgArea = document.getElementById("msg-area");
+  msgArea.innerHTML = '';
+  for (let i = mensagens.length-1; i >= 0 ; i--) {
+    const elementos = prepararElementos(i, mensagens);  
+    msgArea = appendElements(msgArea, elementos);
+  }
 }
+
+atualizarMensagens();
