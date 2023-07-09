@@ -40,7 +40,6 @@ const coletarMensagem = function () {
   if(conteudoVazio(conteudo)) {
     console.log("Conteúdo do formuládio não pode estar vazio.");
 
-    
     toastMensagem.innerText = "❌ Preencha os campos em VERMELHO!";
     divToastArea.classList = "d-flex bg-danger-subtle border border-danger-subtle";
     return null;

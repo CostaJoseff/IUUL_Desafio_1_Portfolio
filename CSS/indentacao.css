@@ -30,6 +30,11 @@
   justify-content: space-evenly;
 }
 
+.spc-toast {
+  height: 47px;
+  width: 348px;
+}
+
 .txt-meio {
   text-align: center;
 }
@@ -126,6 +131,10 @@
   .hdr-spc {
     height: 113px;
   }
+
+  .disp-flex {
+    display: block;
+  }
   
 }
 
@@ -159,6 +168,10 @@
 @media (max-width: 445px) {
   .nav-link {
     --bs-nav-link-padding-x: 0.5em;
+  }
+
+  .spc-toast {
+    width: auto;
   }
 }
 
