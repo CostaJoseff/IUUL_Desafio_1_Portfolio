@@ -1,5 +1,7 @@
 html {
   background-color: #1b1e23;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .mrg-td-p {
@@ -14,4 +16,25 @@ html {
 .del-anim {
   height: 0;
   transition: 1s;
+}
+
+@media (max-width: 544px) {
+  #texto-deletar {
+    font-size: 0;
+  }
+
+  #texto-atualizar {
+    font-size: 0;
+  }
+
+  .pdd-lr-m {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media (max-width: 365px) {
+  .txt-dstk-m {
+    font-size: 30px!important;
+  }
 }

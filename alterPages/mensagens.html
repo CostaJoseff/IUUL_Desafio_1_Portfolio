@@ -20,10 +20,14 @@
 
     <nav class="fixed-bottom bg-escuro d-flex justify-content-between align-items-center pdd-lr-m sombra-topo-externa">
       <p class="txt-dstk-m">Menu</p>
-      <a onclick="deletarTudo()" class="btn pointer nav-link ">Deletar tudo<i class="bi bi-trash padd-left-pp"></i></a>
-      <a onclick="atualizarMensagens()" class="btn padd-left-p nav-link pointer">Atualizar<i class="bi bi-arrow-repeat padd-left-pp"></i></a>
+      <div onclick="deletarTudo()" class="d-flex nav-link pointer"><a id="texto-deletar" class="btn pointer nav-link ">Deletar tudo</a><i class="bi bi-trash padd-left-pp"></i></div>
+      <div onclick="atualizarMensagens()" class="d-flex nav-link pointer"><a id="texto-atualizar" class="btn padd-left-p nav-link ">Atualizar</a><i class="bi bi-arrow-repeat padd-left-pp"></i></div>
       <a href="../index.html" class="btn nav-link">Portfolio</a>
     </nav>
+
+    
+
+
 
     <script src="../JS/mensagens.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

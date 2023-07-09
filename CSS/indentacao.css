@@ -75,6 +75,10 @@
   padding-left: 0.3em;
 }
 
+.padd-left-m {
+  padding-left: 5em;
+}
+
 .padd-rt-m {
   padding-right: 3em;
   padding-top: 3em;
