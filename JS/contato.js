@@ -48,7 +48,7 @@ const coletarMensagem = function () {
   armazenamentoLocal.push(conteudo);
 
   localStorage.setItem("mensagens", JSON.stringify(armazenamentoLocal));
-  localStorage.setItem("idDisponivel", msgID++);
+  localStorage.setItem("idDisponivel", ++msgID);
   toastMensagem.innerText = "✔️ Mensagem enviada!";
     divToastArea.classList = "d-flex bg-success-subtle border border-success-subtle";
 

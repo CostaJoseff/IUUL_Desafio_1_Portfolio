@@ -1,11 +1,22 @@
-function criarIconEventList(iconLixo, ID) {
-  return function deletarMensagem () {
-    let divMsgArea = document.getElementById("msg-area");
-    let divCard = iconLixo.parentNode.parentNode.parentNode;
-    divMsgArea.removeChild(divCard);
+function deletarElemento(icon) {
+  return function () {
+    let msgArea = document.getElementById("msg-area");
+    let divCard = icon.parentNode.parentNode.parentNode;
+    let cardMsgID = icon.parentNode.querySelector("p").innerText;
+    msgArea.removeChild(divCard);
 
+
+    /*
+    * lembrar que tenho que pesquisar o ID
+    * que está armazenado no p e comparar
+    * no laço for
+    *
+    * 
+    */
+
+    let mensagens = JSON.parse(localStorage.getItem("mensagens"));
     for (let i = 0; i < mensagens.length; i++) {
-      if(mensagens[i].msgID == ID) {
+      if (mensagens[i].msgID == cardMsgID) {
         if (mensagens.length == 1) {
           mensagens = [];
         } else {
@@ -19,6 +30,7 @@ function criarIconEventList(iconLixo, ID) {
 }
 
 function prepararElementos(i, mensagens) {
+  // Parte superior do card de Mensagem
   let divCard = document.createElement("div");
   divCard.classList = "card mrg-td-p sombra bg-claro"
 
@@ -26,21 +38,27 @@ function prepararElementos(i, mensagens) {
   nome.classList = "d-inline";
   nome.textContent = mensagens[i].nome;
 
+  let id = document.createElement("p");
+  id.id = "msg-id";
+  id.textContent = mensagens[i].msgID;
+
   let iconLixo = document.createElement("i");
   iconLixo.classList = "bi bi-trash scale-anim-icon pointer altura-icon-lixo";
-  iconLixo.addEventListener("click", criarIconEventList(iconLixo, mensagens[i].msgID));
+  iconLixo.addEventListener("click", deletarElemento(iconLixo));
 
-  let divNomeIcons = document.createElement("div");
-  divNomeIcons.classList = "d-flex justify-content-between";
-  divNomeIcons.appendChild(nome);
-  divNomeIcons.appendChild(iconLixo);
+  let divNomeIcon = document.createElement("div");
+  divNomeIcon.classList = "d-flex justify-content-between";
+  divNomeIcon.appendChild(nome);
+  divNomeIcon.appendChild(id);
+  divNomeIcon.appendChild(iconLixo);
 
   let email = document.createElement("p");
   email.classList = "";
   email.textContent = mensagens[i].email;
 
   let hr = document.createElement("hr");
-  
+
+  // Parte inferior do card de Mensagem
   let mensagem = document.createElement("p");
   mensagem.classList = "";
   mensagem.textContent = mensagens[i].mensagem;
@@ -50,7 +68,7 @@ function prepararElementos(i, mensagens) {
 
   return {
     "divCard" : divCard,
-    "divNomeIcons" : divNomeIcons,
+    "divNomeIcons" : divNomeIcon,
     "email" : email,
     "hr": hr,
     "mensagem" : mensagem,
@@ -71,6 +89,7 @@ function appendElements(msgArea, elementos) {
 function deletarTudo() {
   mensagens = [];
   localStorage.setItem("mensagens", JSON.stringify(mensagens));
+  localStorage.setItem("idDisponivel", 0);
 
   let divMsgArea = document.getElementById("msg-area");
   divMsgArea.innerHTML = '';
