@@ -4,6 +4,14 @@ html {
   margin: auto;
 }
 
+.del-anim {
+  transition: opacity 0.2s ease;
+}
+
+.del-anim-removido {
+  opacity: 0;
+}
+
 .conteudoEscondido {
   display: none;
 }
@@ -15,11 +23,6 @@ html {
 
 .scale-anim-icon:active {
   transform: scale(0.57);
-}
-
-.del-anim {
-  height: 0;
-  transition: 1s;
 }
 
 @media (max-width: 544px) {

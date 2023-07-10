@@ -2,8 +2,11 @@ function deletarElemento(icon) {
   return function () {
     let msgArea = document.getElementById("msg-area");
     let divCard = icon.parentNode.parentNode.parentNode;
+    removerDivCard(msgArea, divCard);
     let cardMsgID = icon.parentNode.querySelector("p").innerText;
-    msgArea.removeChild(divCard);
+    setTimeout(function() {
+      msgArea.removeChild(divCard);
+    }, 500);
 
 
     /*
@@ -29,10 +32,14 @@ function deletarElemento(icon) {
   }
 }
 
+function removerDivCard(msgArea, divCard) {
+  divCard.classList.add("del-anim-removido");
+}
+
 function prepararElementos(i, mensagens) {
   // Parte superior do card de Mensagem
   let divCard = document.createElement("div");
-  divCard.classList = "card mrg-td-p sombra bg-claro"
+  divCard.classList = "card mrg-td-p sombra bg-claro del-anim"
 
   let nome = document.createElement("h2");
   nome.classList = "d-inline";
